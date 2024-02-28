@@ -7,7 +7,7 @@ import Logo2 from "../navigation/Logo2";
 
 export default function Leading() {
     return(
-        <div className="pt-[10rem] nav-lg:pt-[14rem] flex justify-around transition-all duration-300 relative z-50">
+        <div className="pt-[7rem] tiny-460:pt-[10rem] nav-lg:pt-[14rem] flex justify-around transition-all duration-300 relative z-50">
 
             <div className="flex flex-col items-center">
                 <Logo2 className="h-[15rem] w-[15rem] tiny-460:hidden" />
