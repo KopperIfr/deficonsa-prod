@@ -8,13 +8,14 @@ import { faEnvelope, faMap, faMapLocation, faMapLocationDot, faPhone } from "@fo
 import { faInstagram, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { motion } from "framer-motion"
 import { animateBTM_TOP } from "@/config/animations"
+import PhoneLogo from "./navigation/PhoneLogo";
 
 export default function Footer() {
     return(
         <footer className="w-full h-[42rem] bg-[#1b1a18] relative overflow-hidden pt-[4rem]">
             <Circle className="top-[-40rem] right-[-35rem]" />
             <HouseOutlineExtraLight className="top-[-28rem] right-[-30rem] opacity-5" />
-            <Logo className="w-[18rem] h-[18rem] absolute top-[0] right-[10rem]" />
+            <Logo className="w-[18rem] h-[18rem] absolute top-[0] right-[10rem] block" />
             <Circle className="top-[10rem] right-[0rem] left-[-40rem] " />
             <HouseOutlineExtraLight className="top-[20rem] right-[0rem] left-[-25rem] w-[50rem] h-[50rem] opacity-20 rotate-0" />
             <PaddingWrapper>

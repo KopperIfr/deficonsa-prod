@@ -12,11 +12,20 @@ module.exports = {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
+      screens: {
+        "tiny-460" : '460px',
+        "tiny" : "500px",
+        "md-2" : "900px",
+        "md-3" : "992px",
+        "nav-lg": '1068px',
+        "bg-home-1104" : '1104px',
+        "lg-2" : "1220px",
+        'projects-xl' : '1377px',
+        "services-bp" : "1426px",
+        "3xl": '2000px',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

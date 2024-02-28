@@ -4,12 +4,15 @@ import PaddingWrapper from "../wrapper/PaddingWrapper";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { animateBTM_TOP } from "@/config/animations";
+import { WHY_US } from "@/config/data";
+import { cn } from "@/lib/utils";
 
 export default function PorqueEscogernos() {
     return(
         <div className="bg-white min-h-[100vh] w-full relative overflow-hidden pb-[10rem]">
-            <HouseOutlineExtraLight className="top-[-20rem] right-[-20rem] rotate-0" />
-            <HouseOutlineExtraLight className="top-[20rem] left-[-40rem] rotate-45" />
+            <HouseOutlineExtraLight className="hidden sm:flex top-[-18rem] right-[-28rem] rotate-180 opacity-40 nav-lg:rotate-0 nav-lg:opacity-75 nav-lg:right-[-24rem] xl:right-[-20rem]" />
+            {/* <HouseOutlineExtraLight className="hidden sm:flex top-[-20rem] right-[-20rem] rotate-0" /> */}
+            <HouseOutlineExtraLight className="hidden sm:flex sm:top-[20rem] sm:left-[-40rem] opacity-40 rotate-45 nav-lg:opacity-75" />
             <div className="w-full mt-[4rem]">
                 <PaddingWrapper>
                     <motion.p
@@ -18,7 +21,8 @@ export default function PorqueEscogernos() {
                     whileInView="animate"
                     viewport={{once: true}}
                     custom={1} 
-                    className="text-[#bb9c47] text-[1.3rem] font-medium mb-[1rem]">PORQUÉ NOSOTROS
+                    className="text-[#bb9c47] text-[1.6rem] text-center font-semibold mb-[3rem] tiny-460:text-[1.9rem] sm:mb-[5rem] nav-lg:mb-[1rem] nav-lg:text-[1.3rem] nav-lg:text-start 2xl:ml-[3rem]">PORQUÉ NOSOTROS
+                    {/* className="text-[#bb9c47] text-[1.3rem] font-medium mb-[1rem] 2xl:ml-[3rem]">PORQUÉ NOSOTROS */}
                     </motion.p>
                     <motion.div 
                     variants={animateBTM_TOP}
@@ -26,93 +30,59 @@ export default function PorqueEscogernos() {
                     whileInView="animate"
                     viewport={{once: true}}
                     custom={2}
-                    className="text-[2.2rem] font-semibold antialiased leading-[3rem] text-black/85">
-                        <p>SOMOS LOS MEJORES,</p>
-                        <p>LAS MEJORES SOLUCIONES</p>
-                        <p>Y LA MEJOR CALIDAD</p>
+                    className="hidden nav-lg:block text-[2.2rem] font-semibold antialiased leading-[3rem] text-black/85 2xl:ml-[3rem] nav-lg:mb-[5rem]">
+                    {/* className="text-[2.2rem] font-semibold antialiased leading-[3rem] text-black/85 2xl:ml-[3rem]"> */}
+                        <p className="text-start ">SOMOS LOS MEJORES,</p>
+                        <p className="text-center nav-lg:text-start">LAS MEJORES SOLUCIONES</p>
+                        <p className="text-end nav-lg:text-start">Y LA MEJOR CALIDAD</p>
                     </motion.div>
 
-                    <div className="w-full flex flex-col mt-[3.5rem]">
-
-
-                        <motion.div 
-                        variants={animateBTM_TOP}
-                        initial="initial"
-                        whileInView="animate"
-                        viewport={{once: true}}
-                        custom={1}
-                        className="w-full grid grid-cols-2">
-                            <div className="h-[17rem] pl-[3rem]">
-                                <p className="text-black/35 font-semibold text-[5rem]">01</p>
-                                <p className="text-[#bb9c47] text-[1.4rem] font-medium antialiased mb-[.4rem]">Experiencia y Conocimiento</p>
-                                <p className="leading-[2rem] max-w-[30rem] text-[.95rem]">
-                                Contamos con profesionales con experiencia y conocimientos especializados en diferentes áreas de la construcción, por lo que garantizamos un trabajo de la mas alta calidad
-                                </p>
-                            </div>
-                            <div className="relative flex justify-center mr-[3rem]">
-                                <Image 
-                                src='/imgs/intro.jpg'
-                                alt="img"
-                                fill
-                                sizes="(max-width: 5px), (max-height: 5px)"
-                                className="object-cover"/>
-                            </div>
-                        </motion.div>
 
 
 
 
-                        <motion.div 
-                        variants={animateBTM_TOP}
-                        initial="initial"
-                        whileInView="animate"
-                        viewport={{once: true}}
-                        custom={2}
-                        className="w-full grid grid-cols-2 mt-[6rem]">
-                            <div className="relative flex justify-center ml-[3rem]">
-                                <Image 
-                                src='/imgs/intro2.jpg'
-                                alt="img"
-                                fill
-                                sizes="(max-width: 5px), (max-height: 5px)"
-                                className="object-cover"/>
-                            </div>
-                            <div className="h-[17rem] pl-[3rem]">
-                                <p className="text-black/35 font-semibold text-[5rem]">02</p>
-                                <p className="text-[#bb9c47] text-[1.4rem] font-medium antialiased mb-[.4rem]">Garantia y Seguro</p>
-                                <p className="leading-[2rem] max-w-[30rem] text-[.95rem]">
-                                Contamos con profesionales con experiencia y conocimientos especializados en diferentes áreas de la construcción, por lo que garantizamos un trabajo de la mas alta calidad
-                                </p>
-                            </div>
-                        </motion.div>
 
 
-
-                        <motion.div 
-                        variants={animateBTM_TOP}
-                        initial="initial"
-                        whileInView="animate"
-                        viewport={{once: true}}
-                        custom={3}
-                        className="w-full grid grid-cols-2 mt-[6rem]">
-                            <div className="h-[17rem] pl-[3rem]">
-                                <p className="text-black/35 font-semibold text-[5rem]">03</p>
-                                <p className="text-[#bb9c47] text-[1.4rem] font-medium antialiased mb-[.4rem]">Flexibilidad y Adaptabilidad</p>
-                                <p className="leading-[2rem] max-w-[30rem] text-[.95rem]">
-                                Contamos con profesionales con experiencia y conocimientos especializados en diferentes áreas de la construcción, por lo que garantizamos un trabajo de la mas alta calidad
-                                </p>
-                            </div>
-                            <div className="relative flex justify-center mr-[3rem]">
-                                <Image 
-                                src='/imgs/intro7.jpg'
-                                alt="img"
-                                fill
-                                sizes="(max-width: 5px), (max-height: 5px)"
-                                className="object-cover"/>
-                            </div>
-                        </motion.div>
+                    <div className="w-full flex flex-col mt-[3.5rem] xl:items-center">
 
 
+                        {WHY_US.map((elem, index) => (
+                            <motion.div
+                            key={index}
+                            variants={animateBTM_TOP}
+                            initial="initial"
+                            whileInView="animate"
+                            viewport={{once: true}}
+                            custom={index}
+                            className={cn("w-full grid grid-cols-2 shadow-lg rounded-[.5rem] pb-[2rem] relative overflow-hidden sm:shadow-none sm:pb-0 sm:rounded-none xl:max-w-[80.125rem]", {"mb-[6rem]" : index !== WHY_US.length - 1})}>
+                                <div className="w-[20rem] h-[20rem] absolute top-[-5rem] right-[-5rem] tiny:w-[30rem] tiny:h-[30rem] tiny:top-[-10rem] tiny:right-[-10rem] sm:hidden ">
+                                    <Image 
+                                    src={elem.plano}
+                                    alt="img"
+                                    fill
+                                    priority
+                                    sizes="(max-width: 5px), (max-height: 5px)"
+                                    className="object-cover tiny:object-contain opacity-30 saturate-0 rotate-45"/> 
+                                </div>
+
+                                <div className={cn("col-span-2 relative z-50 sm:col-span-1 px-[3rem] sm:px-0  nav-lg:h-[17rem]",{'order-2 sm:pl-[2rem]' : elem.img_side === 'left'}, {'sm:pr-[2rem]' : elem.img_side === 'right'}  )}>
+                                    <p className="text-[#aaaaaa] font-semibold text-[4rem] sm:text-[2.5rem] nav-lg:text-[3.5rem] xl:text-[4.5rem]">{elem.numb}</p>
+                                    <p className="text-[#bb9c47] text-[1.4rem] font-semibold antialiased mb-[.4rem] tiny-460:text-[1.8rem] sm:text-[1.2rem] nav-lg:text-[1.5rem] nav-lg:font-medium">{elem.title}</p>
+                                    <p className="leading-[2rem] max-w-[40rem] text-[1rem] tiny-460:text-[1.2rem] tiny-460:leading-[2.3rem] tiny-460:text-black/75 tiny-460:max-w-[35rem] sm:text-[1rem] sm:leading-[1.5rem] sm:max-w-[18.938rem] sm:max-h-[10.5rem] nav-lg:max-w-[23rem] nav-lg:leading-[1.8rem] xl:max-w-[30rem]">
+                                    {elem.desc}
+                                    </p>
+                                </div>
+                                <div className={cn("hidden relative sm:flex justify-center mr-[3rem] sm:h-full sm:w-full", {"order-1" : elem.img_side === 'left'})}>
+                                    <Image 
+                                    src={elem.img_src}
+                                    alt="img"
+                                    fill
+                                    priority
+                                    sizes="(max-width: 5px), (max-height: 5px)"
+                                    className="object-cover"/>
+                                </div>
+                            </motion.div>
+                        ))}
 
                     </div>
                 </PaddingWrapper>

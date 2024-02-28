@@ -6,6 +6,7 @@ config.autoAddCss = false;
 import { cn } from "@/lib/utils";
 import NavBar from "@/components/navigation/NavBar";
 import Footer from "@/components/Footer";
+import PhoneNavBar from "@/components/navigation/PhoneNavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,3 +26,5 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PaddingWrapper({children}) {
     return (
-        <div className="w-full h-full sm:px-[2rem] md:px-[2rem] lg:px-[5rem] xl:px-[10rem] relative">
+        <div className="w-full h-full px-[1rem] sm:px-[3rem] lg:px-[3rem] 2xl:px-[7rem] 3xl:px-[16rem] relative">
             {children}
         </div>
     );
