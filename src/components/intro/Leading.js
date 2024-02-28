@@ -17,7 +17,7 @@ export default function Leading() {
                 whileInView="animate"
                 viewport={{once: true}}
                 custom={2} 
-                className="text-black text-center text-[9vw] leading-[13vw] tiny-460:block tiny:text-[8vw] tiny:leading-[11vw]  sm:text-[3rem] nav-lg:text-[4rem] sm:leading-[4rem] nav-lg:leading-[4.7rem] font-medium sm:text-start transition-all duration-300">
+                className="text-black text-center text-[7vw] leading-[10vw] tiny-460:block tiny:text-[8vw] tiny:leading-[11vw]  sm:text-[3rem] nav-lg:text-[4rem] sm:leading-[4rem] nav-lg:leading-[4.7rem] font-medium sm:text-start transition-all duration-300">
                     <motion.b
                     className="text-[#e2cb8b] font-medium sm:leading-[4.5rem] nav-lg:leading-[6rem]">
                         CONSTRUIMOS <br/>

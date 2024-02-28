@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 export default function PorqueEscogernos() {
     return(
-        <div className="bg-white min-h-[100vh] w-full relative overflow-hidden pb-[10rem]">
+        <div className="bg-white min-h-[100vh] w-full relative overflow-hidden pb-[5rem] sm:pb-[10rem]">
             <HouseOutlineExtraLight className="hidden sm:flex top-[-18rem] right-[-28rem] rotate-180 opacity-40 nav-lg:rotate-0 nav-lg:opacity-75 nav-lg:right-[-24rem] xl:right-[-20rem]" />
             {/* <HouseOutlineExtraLight className="hidden sm:flex top-[-20rem] right-[-20rem] rotate-0" /> */}
             <HouseOutlineExtraLight className="hidden sm:flex sm:top-[20rem] sm:left-[-40rem] opacity-40 rotate-45 nav-lg:opacity-75" />

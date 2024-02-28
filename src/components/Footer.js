@@ -8,14 +8,13 @@ import { faEnvelope, faMap, faMapLocation, faMapLocationDot, faPhone } from "@fo
 import { faInstagram, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { motion } from "framer-motion"
 import { animateBTM_TOP } from "@/config/animations"
-import PhoneLogo from "./navigation/PhoneLogo";
 
 export default function Footer() {
     return(
-        <footer className="w-full h-[42rem] bg-[#1b1a18] relative overflow-hidden pt-[4rem]">
+        <footer className="w-full h-auto pb-[13rem] bg-[#1b1a18] relative overflow-hidden pt-[4rem] px-[2rem] sm:px-0">
             <Circle className="top-[-40rem] right-[-35rem]" />
             <HouseOutlineExtraLight className="top-[-28rem] right-[-30rem] opacity-5" />
-            <Logo className="w-[18rem] h-[18rem] absolute top-[0] right-[10rem] block" />
+            <Logo className="hidden w-[18rem] h-[18rem] absolute top-[0] right-[10rem] xl-1470:block" />
             <Circle className="top-[10rem] right-[0rem] left-[-40rem] " />
             <HouseOutlineExtraLight className="top-[20rem] right-[0rem] left-[-25rem] w-[50rem] h-[50rem] opacity-20 rotate-0" />
             <PaddingWrapper>
@@ -27,23 +26,23 @@ export default function Footer() {
                 whileInView="animate"
                 viewport={{once: true}}
                 custom={0}
-                className="flex w-full justify-between">
-                    <h3 className="text-[#e2cb8b] text-[2.2rem] font-medium">
+                className="flex w-full text-start bg-home-1104:text-start bg-home-1104:justify-between">
+                    <h3 className="text-[#e2cb8b] text-[1.1rem] tiny-460:text-[1.5rem] tiny-525:text-[1.8rem] sm:text-[2.2rem] font-medium">
                         CON NOSOTROS TUS SUEÑOS <br /> SE HACEN REALIDAD
                     </h3>
                 </motion.div>
 
 
 
-                <div className="flex w-full mt-[6rem] justify-start gap-48">
+                <div className="flex flex-wrap w-full mt-[6rem] justify-start bg-home-1104:justify-start gap-16 tiny-525:gap-24 bg-home-1104:gap-48">
                     <motion.div 
                     variants={animateBTM_TOP}
                     initial="initial"
                     whileInView="animate"
                     viewport={{once: true}}
                     custom={2}
-                    className="flex flex-col text-white/75 text-[1rem] gap-3">
-                        <h4 className="text-[#e2cb8b] text-[1.5rem]">Empresa</h4>
+                    className="flex flex-col text-white/75 text-[.8rem] bg-home-1104:text-[1rem] gap-3">
+                        <h4 className="text-[#e2cb8b] text-[1.2rem] tiny-460:text-[1.5rem]">Empresa</h4>
                         <p>Deficonsa</p>
                         <p>Sobre Nosotros</p>
                         <p>Proyectos</p>
@@ -59,8 +58,8 @@ export default function Footer() {
                     whileInView="animate"
                     viewport={{once: true}}
                     custom={3}
-                    className="flex flex-col text-white/75 text-[1rem] gap-3">
-                        <h4 className="text-[#e2cb8b] text-[1.5rem]">Informacion de Contacto</h4>
+                    className="flex flex-col text-white/75 text-[.8rem] bg-home-1104:text-[1rem] gap-3">
+                        <h4 className="text-[#e2cb8b] text-[1.2rem] tiny-460:text-[1.5rem]">Informacion de Contacto</h4>
                         <p>
                             <FontAwesomeIcon icon={faPhone} className="mr-[1rem]" />
                             +34 640 849 030
@@ -86,8 +85,8 @@ export default function Footer() {
                     whileInView="animate"
                     viewport={{once: true}}
                     custom={4}
-                    className="flex flex-col text-white/75 text-[1rem] gap-3">
-                        <h4 className="text-[#e2cb8b] text-[1.5rem]">
+                    className="flex flex-col text-white/75 text-[.8rem] bg-home-1104:text-[1rem] gap-3">
+                        <h4 className="text-[#e2cb8b] text-[1.2rem] tiny-460:text-[1.5rem]">
                             A su disposicion
                         </h4>
                         <p className="">Lunes - Viernes 10AM - 18PM</p>
@@ -99,11 +98,11 @@ export default function Footer() {
             </PaddingWrapper>
             
             <div
-            className="w-full absolute bottom-0 left-0 h-[6rem] border-t-[.1rem] border-[#e2cb8b]">
+            className="w-full absolute bottom-0 left-0 h-[7rem] tiny-570:h-[6rem] border-t-[.1rem] border-[#e2cb8b]">
                 <PaddingWrapper>
-                    <div className="w-full h-full flex items-center justify-between text-white/75">
-                        <div className="text-[.9rem] flex flex-col items-center">
-                            <p className="text-[.9rem]">
+                    <div className="w-full h-full flex flex-col py-[1rem] tiny-570:py-0 tiny-570:flex-row items-center justify-between text-white/75">
+                        <div className="text-[.75rem] tiny-460:text-[.9rem] flex flex-col items-center tiny-570:items-start">
+                            <p className="text-[.75rem] tiny-460:text-[.9rem]">
                                 © Empresa Deficonsa, todos los derechos reservados
                             </p>
                             <p> Politica de privadidad | Politica de cookies </p>

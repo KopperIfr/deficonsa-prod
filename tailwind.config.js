@@ -17,13 +17,17 @@ module.exports = {
       screens: {
         "tiny-460" : '460px',
         "tiny" : "500px",
+        "tiny-525" : "525px",
+        "tiny-570" : '570px',
         "md-2" : "900px",
         "md-3" : "992px",
         "nav-lg": '1068px',
         "bg-home-1104" : '1104px',
         "lg-2" : "1220px",
+        "lg-1230" : "1230px",
         'projects-xl' : '1377px',
         "services-bp" : "1426px",
+        "xl-1470" : "1470px",
         "3xl": '2000px',
       },
       colors: {
