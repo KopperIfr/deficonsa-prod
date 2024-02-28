@@ -8,10 +8,10 @@ import HouseOutlineExtraLight from "./elements/HouseOutlineExtraLight"
 export default function BgHome() {
     return(
         <div className="absolute w-full top-0 left-0 flex flex-col -z-10">
-            <div className="bg-[#141413] h-[7rem] nav-lg:h-[10rem] relative w-full overflow-hidden transition-all duration-300"> 
+            <div className="bg-[#141413] tiny-460:h-[7rem] nav-lg:h-[10rem] relative w-full overflow-hidden transition-all duration-300"> 
                 <Circle />
             </div>
-            <div className="h-[43rem] tiny-460:h-[30rem] md:h-[35rem] nav-lg:h-[40rem] w-full relative overflow-hidden ">
+            <div className="h-[53rem] tiny-460:h-[30rem] md:h-[35rem] nav-lg:h-[40rem] w-full relative overflow-hidden ">
                 <div className="absolute top-0 left-0 w-full h-full bg-[#1b1a18d7] tiny-460:bg-[#1b1a18ac] z-10"></div>
                 <Image 
                 src='/imgs/intro4.jpg'

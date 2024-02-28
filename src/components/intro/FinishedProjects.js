@@ -13,7 +13,7 @@ import Plano from "./projects/Plano";
 export default function FinishedProyects() {
     return(
         <>
-        <h2 className="mt-[8rem] mb-3 text-[#e2cb8bc1] tiny-460:text-[1.1rem] tiny-460:text-[#e2cb8bee] font-mono italic nav-lg:hidden">NUESTROS PROYECTOS</h2>
+        <h2 className="mt-[5rem] mb-3 text-[#e2cb8bc1] tiny-460:text-[1.1rem] tiny-460:text-[#e2cb8bee] font-mono italic nav-lg:hidden">NUESTROS PROYECTOS</h2>
         <div className="relative w-full grid grid-cols-2 gap-3 justify-center sm:gap-9 nav-lg:mt-[7rem] nav-lg:grid-cols-3 nav-lg:max-h-[36.4rem] nav-lg:overflow-hidden nav-lg:gap-6 lg-2:gap-9 xl:grid-cols-4">
             {
                 PROYECTS.map((elem, i) => (
