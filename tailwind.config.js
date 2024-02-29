@@ -29,6 +29,7 @@ module.exports = {
         "services-bp" : "1426px",
         "xl-1470" : "1470px",
         "3xl": '2000px',
+        "4k" : '2400px'
       },
       colors: {
         border: "hsl(var(--border))",

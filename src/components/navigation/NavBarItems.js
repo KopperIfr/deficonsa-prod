@@ -7,7 +7,7 @@ export default function NavBarItems() {
         <>
             {
                 NAVBAR_ITEMS.map((item, i) => (
-                    <div className="flex items-center gap-3" key={item.name}>
+                    <div className="flex items-center gap-3 3xl:gap-7 4k:gap-10" key={item.name}>
                         {/* {
                             item.active ? (
                                 <span className="rounded-full w-[.6rem] h-[.6rem] bg-[#e2cb8b]"></span>
@@ -15,7 +15,7 @@ export default function NavBarItems() {
                         } */}
                         <Link
                         href={item.href}
-                        className={cn("pb-[.1rem] hover:text-[#e2cb8b]",{"border-b-[.1rem] border-[#e2cb8b] text-[#e2cb8b]" : item.active})}>
+                        className={cn("pb-[.1rem] hover:text-[#e2cb8b] relative z-50",{"border-b-[.1rem] border-[#e2cb8b] text-[#e2cb8b]" : item.active})}>
                             {item.name}
                         </Link>
                     </div>

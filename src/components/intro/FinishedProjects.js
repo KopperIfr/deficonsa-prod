@@ -14,12 +14,12 @@ export default function FinishedProyects() {
     return(
         <>
         <h2 className="mt-[5rem] mb-3 text-[#e2cb8bc1] tiny-460:text-[1.1rem] tiny-460:text-[#e2cb8bee] font-mono italic nav-lg:hidden">NUESTROS PROYECTOS</h2>
-        <div className="relative w-full grid grid-cols-2 gap-3 justify-center sm:gap-9 nav-lg:mt-[7rem] nav-lg:grid-cols-3 nav-lg:max-h-[36.4rem] nav-lg:overflow-hidden nav-lg:gap-6 lg-2:gap-9 xl:grid-cols-4">
+        <div className="relative w-full grid grid-cols-2 gap-3 justify-center sm:gap-9 nav-lg:mt-[7rem] nav-lg:grid-cols-3 nav-lg:max-h-[36.4rem] nav-lg:overflow-hidden nav-lg:gap-6 lg-2:gap-9 xl:grid-cols-4 3xl:h-auto 3xl:max-h-full 3xl:mt-[11rem] 4k:mt-[15rem]">
             {
                 PROYECTS.map((elem, i) => (
 
                     /*  This is the div that represents the project itself  */
-                    <div key={i} className="h-[10rem] w-full sm:h-[12rem] md:h-[15rem] bg-white/20 relative nav-lg:h-[36rem]">
+                    <div key={i} className="h-[10rem] w-full sm:h-[12rem] md:h-[15rem] bg-white/20 relative nav-lg:h-[36rem] 3xl:h-[42rem] 4k:h-[55rem]">
 
                         <Link href='#' 
                         className=" bg-black/70 flex justify-center items-center text-white absolute bottom-0 left-0 w-full h-[2rem] z-10 text-[.8rem] md-2:h-[3rem] md-2:text-[.93rem] nav-lg:hidden">
@@ -36,7 +36,7 @@ export default function FinishedProyects() {
 
                         {/* DIV that contains all the info related to the project */}
                         <div className="hidden flex-col h-2/3 nav-lg:flex">
-                            <div className="relative overflow-hidden w-full bg-white px-[1.5rem] py-[1rem]">
+                            <div className="relative overflow-hidden w-full bg-white px-[1.5rem] py-[1rem] 3xl:h-full">
                                 <Plano plano={elem.plano} />
                                 <ServiceProject service={elem.process} />
                                 <Title title={elem.name} />

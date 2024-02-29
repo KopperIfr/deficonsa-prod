@@ -9,13 +9,13 @@ export default function Logro({logro, number, index}) {
         whileInView="animate"
         viewport={{once: true}}
         custom={index}
-        className={cn("text-white text-center flex flex-col items-center min-w-[8rem] max-w-[8rem] tiny:max-w-full sm:items-center nav-lg:text-[1.6rem]", 
+        className={cn("text-white text-center flex flex-col items-center min-w-[8rem] max-w-[8rem] tiny:max-w-full sm:items-center nav-lg:text-[1.6rem] 3xl:h-auto 3xl:pb-6 4k:pb-8", 
         {'items-start' : index % 2 !== 0},
         {'items-end' : index % 2 === 0})}>
-            <p className="text-[2rem] font-semibold w-full tiny:max-w-[5rem] sm:max-w-full 2xl:text-[3rem]">
+            <p className="text-[2rem] font-semibold w-full tiny:max-w-[5rem] sm:max-w-full 2xl:text-[3rem] 3xl:text-[3.4rem] 4k:text-[4rem]">
                 {number}<b className="text-[#e2cb8b] font-medium">+</b>
             </p>
-            <p className="text-white/75 w-full tiny:max-w-[5rem] sm:max-w-full xl:text-[.9rem] 2xl:text-[1rem]">
+            <p className="text-white/75 w-full tiny:max-w-[5rem] sm:max-w-full xl:text-[.9rem] 2xl:text-[1rem] 3xl:text-[1.3rem]">
                 {logro}
             </p>
         </motion.div>

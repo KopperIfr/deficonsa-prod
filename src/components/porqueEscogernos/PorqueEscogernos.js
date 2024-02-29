@@ -54,7 +54,7 @@ export default function PorqueEscogernos() {
                             whileInView="animate"
                             viewport={{once: true}}
                             custom={index}
-                            className={cn("w-full grid grid-cols-2 shadow-lg rounded-[.5rem] pb-[2rem] relative overflow-hidden sm:shadow-none sm:pb-0 sm:rounded-none xl:max-w-[80.125rem]", {"mb-[6rem]" : index !== WHY_US.length - 1})}>
+                            className={cn("w-full grid grid-cols-2 shadow-lg rounded-[.5rem] pb-[2rem] relative overflow-hidden sm:shadow-none sm:pb-0 sm:rounded-none xl:max-w-[80.125rem] 3xl:max-w-[95rem] 4k:max-w-[120rem]", {"mb-[6rem]" : index !== WHY_US.length - 1})}>
                                 <div className="w-[20rem] h-[20rem] absolute top-[-5rem] right-[-5rem] tiny:w-[30rem] tiny:h-[30rem] tiny:top-[-10rem] tiny:right-[-10rem] sm:hidden ">
                                     <Image 
                                     src={elem.plano}
@@ -65,10 +65,10 @@ export default function PorqueEscogernos() {
                                     className="object-cover tiny:object-contain opacity-30 saturate-0 rotate-45"/> 
                                 </div>
 
-                                <div className={cn("col-span-2 relative z-50 sm:col-span-1 px-[3rem] sm:px-0  nav-lg:h-[17rem]",{'order-2 sm:pl-[2rem]' : elem.img_side === 'left'}, {'sm:pr-[2rem]' : elem.img_side === 'right'}  )}>
-                                    <p className="text-[#aaaaaa] font-semibold text-[4rem] sm:text-[2.5rem] nav-lg:text-[3.5rem] xl:text-[4.5rem]">{elem.numb}</p>
-                                    <p className="text-[#bb9c47] text-[1.4rem] font-semibold antialiased mb-[.4rem] tiny-460:text-[1.8rem] sm:text-[1.2rem] nav-lg:text-[1.5rem] nav-lg:font-medium">{elem.title}</p>
-                                    <p className="leading-[2rem] max-w-[40rem] text-[1rem] tiny-460:text-[1.2rem] tiny-460:leading-[2.3rem] tiny-460:text-black/75 tiny-460:max-w-[35rem] sm:text-[1rem] sm:leading-[1.5rem] sm:max-w-[18.938rem] sm:max-h-[10.5rem] nav-lg:max-w-[23rem] nav-lg:leading-[1.8rem] xl:max-w-[30rem]">
+                                <div className={cn("col-span-2 relative z-50 sm:col-span-1 px-[3rem] sm:px-0  nav-lg:h-[17rem] 3xl:h-[20rem] 4k:h-[23rem]",{'order-2 sm:pl-[2rem] 3xl:pl-[5rem]' : elem.img_side === 'left'}, {'sm:pr-[2rem]' : elem.img_side === 'right'}  )}>
+                                    <p className="text-[#aaaaaa] font-semibold text-[4rem] sm:text-[2.5rem] nav-lg:text-[3.5rem] xl:text-[4.5rem] 3xl:text-[4.7rem] 4k:text-[5.5rem]">{elem.numb}</p>
+                                    <p className="text-[#bb9c47] text-[1.4rem] font-semibold antialiased mb-[.4rem] tiny-460:text-[1.8rem] sm:text-[1.2rem] nav-lg:text-[1.5rem] nav-lg:font-medium 3xl:text-[2.5rem]">{elem.title}</p>
+                                    <p className="leading-[2rem] max-w-[40rem] text-[1rem] tiny-460:text-[1.2rem] tiny-460:leading-[2.3rem] tiny-460:text-black/75 tiny-460:max-w-[35rem] sm:text-[1rem] sm:leading-[1.5rem] sm:max-w-[18.938rem] sm:max-h-[10.5rem] nav-lg:max-w-[23rem] nav-lg:leading-[1.8rem] xl:max-w-[30rem] 3xl:text-[1.3rem] 4k:text-[1.6rem] 4k:max-w-[40rem] 4k:leading-[2.5rem]">
                                     {elem.desc}
                                     </p>
                                 </div>

@@ -21,7 +21,7 @@ export default function ContLogros() {
 
             <div className="flex flex-col w-full relative z-10 ">
                 <h3 className="text-[1.6rem] font-medium text-[#e2cb8b] my-[1rem] mt-[4rem] text-center nav-lg:text-[2rem] xl:hidden">SERVICIOS</h3>
-                <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center md:gap-x-24 bg-home-1104:gap-x-6">
+                <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center md:gap-x-24 bg-home-1104:gap-x-6 3xl:min-h-[56rem] 4k:min-h-[60rem]">
                     {SERVICES.map((elem, i) => (
                         <Service key={elem.name} service={elem} index={i} />
                     ))}
