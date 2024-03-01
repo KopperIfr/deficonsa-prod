@@ -9,6 +9,7 @@ import Title from "./projects/Title";
 import Description from "./projects/Description";
 import Button from "./projects/Button";
 import Plano from "./projects/Plano";
+import { animateOpacity_WITH_DELAY } from "@/config/animations";
 
 export default function FinishedProyects() {
     return(
@@ -20,7 +21,7 @@ export default function FinishedProyects() {
 
                     /*  This is the div that represents the project itself  */
                     <motion.div
-                    variants={animationPROJECTS}
+                    variants={animateOpacity_WITH_DELAY}
                     initial="initial"
                     whileInView="animate"
                     viewport={{once: true}}

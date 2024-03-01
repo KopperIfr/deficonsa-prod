@@ -1,10 +1,10 @@
 import { motion } from "framer-motion"
-import { animateBTM_TOP } from "@/config/animations"
+import { animateOpacity_WITH_DELAY } from "@/config/animations"
 import { cn } from "@/lib/utils"
 export default function Logro({logro, number, index}) {
     return(
         <motion.div
-        variants={animateBTM_TOP}
+        variants={animateOpacity_WITH_DELAY}
         initial="initial"
         whileInView="animate"
         viewport={{once: true}}

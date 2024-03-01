@@ -3,7 +3,7 @@ import HouseOutlineExtraLight from "../elements/HouseOutlineExtraLight";
 import PaddingWrapper from "../wrapper/PaddingWrapper";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { animateBTM_TOP } from "@/config/animations";
+import { animateBTM_TOP, animateOpacity_0_5, animateOpacity_1 } from "@/config/animations";
 import { WHY_US } from "@/config/data";
 import { cn } from "@/lib/utils";
 
@@ -49,11 +49,10 @@ export default function PorqueEscogernos() {
                         {WHY_US.map((elem, index) => (
                             <motion.div
                             key={index}
-                            variants={animateBTM_TOP}
+                            variants={animateOpacity_1}
                             initial="initial"
                             whileInView="animate"
                             viewport={{once: true}}
-                            custom={index}
                             className={cn("w-full grid grid-cols-2 shadow-lg rounded-[.5rem] pb-[2rem] relative overflow-hidden sm:shadow-none sm:pb-0 sm:rounded-none xl:max-w-[80.125rem] 3xl:max-w-[95rem] 4k:max-w-[120rem]", {"mb-[6rem]" : index !== WHY_US.length - 1})}>
                                 <div className="w-[20rem] h-[20rem] absolute top-[-5rem] right-[-5rem] tiny:w-[30rem] tiny:h-[30rem] tiny:top-[-10rem] tiny:right-[-10rem] sm:hidden ">
                                     <Image 

@@ -1,17 +1,14 @@
 "use client";
-import House from "../elements/House";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { animateBTM_TOP } from "@/config/animations";
+import { animateOpacity_WITH_DELAY } from "@/config/animations";
 import { cn } from "@/lib/utils";
 import Shape from "./Shape";
-import { animationPROJECTS } from "../intro/animations";
 
 export default function Service({service, index}) {
     return(
         <motion.div
-        variants={animationPROJECTS}
+        variants={animateOpacity_WITH_DELAY}
         initial="initial"
         whileInView="animate"
         viewport={{once: true}}

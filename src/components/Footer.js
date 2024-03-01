@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faMap, faMapLocation, faMapLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faInstagram, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons"
 import { motion } from "framer-motion"
-import { animateBTM_TOP } from "@/config/animations"
+import { animateBTM_TOP, animateOpacity_0_5 } from "@/config/animations"
 
 export default function Footer() {
     return(
@@ -21,7 +21,7 @@ export default function Footer() {
 
 
                 <motion.div 
-                variants={animateBTM_TOP}
+                variants={animateOpacity_0_5}
                 initial="initial"
                 whileInView="animate"
                 viewport={{once: true}}
@@ -36,7 +36,7 @@ export default function Footer() {
 
                 <div className="flex flex-wrap w-full mt-[6rem] justify-start bg-home-1104:justify-start gap-16 tiny-525:gap-24 bg-home-1104:gap-48">
                     <motion.div 
-                    variants={animateBTM_TOP}
+                    variants={animateOpacity_0_5}
                     initial="initial"
                     whileInView="animate"
                     viewport={{once: true}}
@@ -53,7 +53,7 @@ export default function Footer() {
 
 
                     <motion.div 
-                    variants={animateBTM_TOP}
+                    variants={animateOpacity_0_5}
                     initial="initial"
                     whileInView="animate"
                     viewport={{once: true}}
@@ -80,7 +80,7 @@ export default function Footer() {
 
 
                     <motion.div 
-                    variants={animateBTM_TOP}
+                    variants={animateOpacity_0_5}
                     initial="initial"
                     whileInView="animate"
                     viewport={{once: true}}

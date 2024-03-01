@@ -27,7 +27,7 @@ export default function Leading() {
 
             <div className="hidden w-[10rem] md:w-[15rem] md-2:w-[25rem] sm:block 3xl:w-[40rem] pt-[1.4rem] text-white/80 text-[.9rem] font-light transition-all duration-300">
                 <motion.p
-                variants={animationRTL_NO_DELAY}
+                variants={animateOpacity}
                 initial="initial"
                 whileInView="animate"
                 viewport={{once: true}}
@@ -35,7 +35,7 @@ export default function Leading() {
                     En Deficonsa estaremos siempre a plena disposición. Sientase libre de contactarnos
                 </motion.p>
                 <motion.div
-                variants={animationRTL_NO_DELAY}
+                variants={animateOpacity}
                 initial="initial"
                 whileInView="animate"
                 viewport={{once: true}}
