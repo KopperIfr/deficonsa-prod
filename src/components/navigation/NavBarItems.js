@@ -1,8 +1,12 @@
 import { NAVBAR_ITEMS } from "@/config/data";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { useActiveMenuContext } from "@/context/activeMenuContext";
+import { motion } from "framer-motion"; 
 
 export default function NavBarItems() {
+
+    const { activeSection, setActiveSection } = useActiveMenuContext();
     return (
         <>
             {
@@ -14,9 +18,16 @@ export default function NavBarItems() {
                             ) : (null)
                         } */}
                         <Link
+                        onClick={() => setActiveSection(item.name)}
                         href={item.href}
-                        className={cn("pb-[.1rem] hover:text-[#e2cb8b]",{"border-b-[.1rem] border-[#e2cb8b] text-[#e2cb8b]" : item.active})}>
+                        className={cn("pb-[.1rem] hover:text-[#e2cb8b] relative",{"text-[#e2cb8b]" : item.name === activeSection})}>
                             {item.name}
+                            {
+                                item.name === activeSection ? 
+                                <motion.span
+                                layoutId="activeSection"
+                                className="h-[.05rem] absolute w-full bottom-0 left-0 bg-[#e2cb8b]"></motion.span> : null
+                            }
                         </Link>
                     </div>
                 ))

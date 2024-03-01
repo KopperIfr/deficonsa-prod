@@ -98,7 +98,7 @@ module.exports = {
         },
         "spin-close": {
           "0%": {
-            rotate: "360deg",
+            rotate: "180deg",
           },
           "100%": {
             rotate: "0deg",

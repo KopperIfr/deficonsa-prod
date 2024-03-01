@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { animationLTR, animationRTL } from "./animations";
-import PhoneLogo from "../navigation/PhoneLogo";
 import Logo2 from "../navigation/Logo2";
 
 export default function Leading() {
@@ -16,12 +15,12 @@ export default function Leading() {
                 initial="initial"
                 whileInView="animate"
                 viewport={{once: true}}
-                custom={2} 
+                custom={0} 
                 className="text-black text-center text-[7vw] leading-[10vw] tiny-460:block tiny:text-[8vw] tiny:leading-[11vw]  sm:text-[3rem] nav-lg:text-[4rem] sm:leading-[4rem] nav-lg:leading-[4.7rem] font-medium sm:text-start transition-all duration-300 3xl:text-[5rem] 3xl:leading-[6rem] 4k:text-[6rem] 4k:leading-[7rem]">
-                    <motion.b
+                    <b
                     className="text-[#e2cb8b] font-medium sm:leading-[4.5rem] nav-lg:leading-[6rem]">
                         CONSTRUIMOS <br/>
-                    </motion.b>
+                    </b>
                     <b className="text-white font-medium">LA CASA QUE <br/> SIEMPRE HAS <br/> SOÑADO</b>
                 </motion.h1>
             </div>

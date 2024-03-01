@@ -6,8 +6,9 @@ export const ActiveMenuContext = createContext(null);
 export default function ActiveMenuContextProvider({children}) {
     const [activeMenu, setActiveMenu] = useState(false);
     const [scrollY, setScrollY] = useState(false);
+    const [activeSection, setActiveSection] = useState('HOME');
     return(
-        <ActiveMenuContext.Provider value={{activeMenu, setActiveMenu, scrollY, setScrollY}}>
+        <ActiveMenuContext.Provider value={{activeMenu, setActiveMenu, scrollY, setScrollY, activeSection, setActiveSection}}>
             {children}
         </ActiveMenuContext.Provider>
     )
