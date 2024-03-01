@@ -3,7 +3,7 @@ import { PROYECTS } from "@/config/data"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { animationPROJECTS } from "./animations";
+import { animationBTT, animationPROJECTS } from "./animations";
 import ServiceProject from "./projects/ServiceProject";
 import Title from "./projects/Title";
 import Description from "./projects/Description";
@@ -19,7 +19,13 @@ export default function FinishedProyects() {
                 PROYECTS.map((elem, i) => (
 
                     /*  This is the div that represents the project itself  */
-                    <div key={i} className="h-[10rem] w-full sm:h-[12rem] md:h-[15rem] bg-white/20 relative nav-lg:h-[36rem] 3xl:h-[42rem] 4k:h-[55rem]">
+                    <motion.div
+                    variants={animationPROJECTS}
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{once: true}}
+                    custom={i} 
+                    key={i} className="h-[10rem] w-full sm:h-[12rem] md:h-[15rem] bg-white/20 relative nav-lg:h-[36rem] 3xl:h-[42rem] 4k:h-[55rem]">
 
                         <Link href='#' 
                         className=" bg-black/70 flex justify-center items-center text-white absolute bottom-0 left-0 w-full h-[2rem] z-10 text-[.8rem] md-2:h-[3rem] md-2:text-[.93rem] nav-lg:hidden">
@@ -45,7 +51,7 @@ export default function FinishedProyects() {
                             <Button />
                         </div>
 
-                    </div>
+                    </motion.div>
                     
                 ))
             }

@@ -12,3 +12,13 @@ export const animateBTM_TOP = {
         }
     })
 }
+
+
+export const animateOpacity = {
+    initial: {
+        opacity: 0,
+    },
+    animate: {
+        opacity: 1,
+    }
+}

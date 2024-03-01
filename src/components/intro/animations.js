@@ -9,7 +9,7 @@ export const animationPROJECTS = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: .3,
+            duration: .2,
             delay: index * .2
         }
     })
@@ -34,14 +34,12 @@ export const animationLEADING_B = {
 
 export const animationLEADING_H2 = {
     initial: {
-        x: -100,
         opacity: 0,
     },
     animate: {
-        x: 0,
         opacity: 1,
         transition: {
-            duration: .5,
+            duration: 1,
         }
     }
 }
@@ -72,6 +70,7 @@ export const animationRTL = {
     })
 }
 
+
 export const animationLTR = {
     initial:{
         x: -50,
@@ -79,6 +78,43 @@ export const animationLTR = {
     },
     animate: (delay) => ({
         x: 0,
+        opacity: 1,
+        transition: {
+            duration: .4,
+            delay: .3 * delay
+        }
+    })
+}
+
+export const animationLTR_NO_DELAY = {
+    initial:{
+        y: 50,
+        opacity: 0
+    },
+    animate: {
+        y: 0,
+        opacity: 1
+    }
+}
+
+export const animationRTL_NO_DELAY = {
+    initial:{
+        y: 50,
+        opacity: 0
+    },
+    animate: {
+        y: 0,
+        opacity: 1
+    }
+}
+
+export const animationBTT = {
+    initial:{
+        y: -50,
+        opacity: 0
+    },
+    animate: (delay) => ({
+        y: 0,
         opacity: 1,
         transition: {
             duration: .4,
