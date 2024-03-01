@@ -7,6 +7,7 @@ export default function Logo2({className = ''}) {
             src='/logos/logo2.png'
             alt="img"
             fill
+            priority={true}
             sizes="(max-width: 5px),(max-height: 5px)"
             className="object-contain w-full h-full"
             />

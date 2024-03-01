@@ -12,11 +12,10 @@ import Logo2 from "./Logo2";
 
 export default function NavBar() {
     return (
-        <header className="flex h-[5rem] tiny-460:h-[7rem] justify-center absolute top-0 left-0 w-full z-[60] tiny-460:border-b-white/50 tiny-460:border-b-[.1rem] nav-lg:h-[10rem] 3xl:h-[12rem]">
+        <header className="hidden nav-lg:flex h-[5rem] tiny-460:h-[7rem] justify-center absolute top-0 left-0 w-full z-[60] tiny-460:border-[#e2cb8b45] tiny-460:border-b-[.1rem] nav-lg:h-[10rem] 3xl:h-[12rem]">
             <HeaderPaddingWrapper>
                 <div className="w-full h-full flex justify-center sm:justify-between items-center nav-lg:justify-evenly">
-                    <Logo2 className="hidden tiny-460:block overflow-hidden h-[5rem] nav-lg:h-[10rem] 3xl:h-[20rem]"/>
-                    <MenuIcon className="nav-lg:hidden" />
+                    <Logo2 className="hidden tiny-460:block overflow-hidden h-[5rem] nav-lg:h-[10rem] 3xl:h-[13rem] 3xl:w-[13rem]"/>
                     <motion.nav
                     variants={animationNAV}
                     initial="initial"

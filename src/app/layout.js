@@ -8,6 +8,7 @@ import NavBar from "@/components/navigation/NavBar";
 import Footer from "@/components/Footer";
 import PhoneNavBar from "@/components/navigation/PhoneNavBar";
 import PhoneMenu from "@/components/navigation/PhoneMenu";
+import ActiveMenuContextProvider from "@/context/activeMenuContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={cn("m-0 p-0 relative", inter.className)}>
-        <PhoneMenu />
-        <NavBar />
-        {children}
-        <Footer />
+        <ActiveMenuContextProvider>
+          <PhoneMenu />
+          <PhoneNavBar />
+          <NavBar />
+          {children}
+          <Footer />
+        </ActiveMenuContextProvider>
       </body>
     </html>
   );

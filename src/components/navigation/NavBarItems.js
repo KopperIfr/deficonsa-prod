@@ -15,7 +15,7 @@ export default function NavBarItems() {
                         } */}
                         <Link
                         href={item.href}
-                        className={cn("pb-[.1rem] hover:text-[#e2cb8b] relative z-50",{"border-b-[.1rem] border-[#e2cb8b] text-[#e2cb8b]" : item.active})}>
+                        className={cn("pb-[.1rem] hover:text-[#e2cb8b]",{"border-b-[.1rem] border-[#e2cb8b] text-[#e2cb8b]" : item.active})}>
                             {item.name}
                         </Link>
                     </div>

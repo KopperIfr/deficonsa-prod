@@ -80,10 +80,37 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "nav-down": {
+          "0%": {
+            top: "-10rem",
+          },
+          "100%": {
+            top: "0",
+          },
+        },
+        "nav-up": {
+          "0%": {
+            top: "20rem",
+          },
+          "100%": {
+            top: "0rem",
+          },
+        },
+        "spin-close": {
+          "0%": {
+            rotate: "360deg",
+          },
+          "100%": {
+            rotate: "0deg",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "nav-down" : "nav-down .5s ease-in-out",
+        "nav-up" : "nav-up .4s ease-in-out",
+        "spin-close" : "spin-close ease-in-out 1s"
       },
     },
   },
