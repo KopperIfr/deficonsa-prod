@@ -16,20 +16,18 @@ export default function PorqueEscogernos() {
             <div className="w-full mt-[4rem]">
                 <PaddingWrapper>
                     <motion.p
-                    variants={animateBTM_TOP}
+                    variants={animateOpacity_1}
                     initial="initial"
                     whileInView="animate"
                     viewport={{once: true}}
-                    custom={1} 
                     className="text-[#bb9c47] text-[1.6rem] text-center font-semibold mb-[3rem] tiny-460:text-[1.9rem] sm:mb-[5rem] nav-lg:mb-[1rem] nav-lg:text-[1.3rem] nav-lg:text-start 2xl:ml-[3rem]">PORQUÉ NOSOTROS
                     {/* className="text-[#bb9c47] text-[1.3rem] font-medium mb-[1rem] 2xl:ml-[3rem]">PORQUÉ NOSOTROS */}
                     </motion.p>
                     <motion.div 
-                    variants={animateBTM_TOP}
+                    variants={animateOpacity_1}
                     initial="initial"
                     whileInView="animate"
                     viewport={{once: true}}
-                    custom={2}
                     className="hidden nav-lg:block text-[2.2rem] font-semibold antialiased leading-[3rem] text-black/85 2xl:ml-[3rem] nav-lg:mb-[5rem]">
                     {/* className="text-[2.2rem] font-semibold antialiased leading-[3rem] text-black/85 2xl:ml-[3rem]"> */}
                         <p className="text-start ">SOMOS LOS MEJORES,</p>

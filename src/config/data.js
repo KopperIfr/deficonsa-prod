@@ -1,6 +1,8 @@
 // bg--1 = #141413
 // bg-0 = #1b1a18
 // bright-color = #e2cb8b
+// bright-color-1 = #e0bc58
+// bright-color-2 = #bb9c47
 
 
 

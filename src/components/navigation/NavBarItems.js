@@ -12,11 +12,6 @@ export default function NavBarItems() {
             {
                 NAVBAR_ITEMS.map((item, i) => (
                     <div className="flex items-center gap-3 3xl:gap-7 4k:gap-10" key={item.name}>
-                        {/* {
-                            item.active ? (
-                                <span className="rounded-full w-[.6rem] h-[.6rem] bg-[#e2cb8b]"></span>
-                            ) : (null)
-                        } */}
                         <Link
                         onClick={() => setActiveSection(item.name)}
                         href={item.href}
