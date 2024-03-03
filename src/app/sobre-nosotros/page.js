@@ -8,8 +8,8 @@ export default function SobreNosotros() {
             <div className="bg-[#141413] h-[5rem] tiny-460:h-[7rem] nav-lg:h-[10rem] w-full absolute top-0 left-0 overflow-hidden">
                 <Circle className="top-[-40rem] right-[-42rem] nav-lg:top-[-47rem] nav-lg:right-[-52rem]" />
             </div>
-            <div className="pt-[5rem] tiny-460:pt-[7rem] nav-lg:pt-[10rem]">
-                {/* <Intro /> */}
+            <div className="pt-[5rem] tiny-460:pt-[7rem] nav-lg:pt-[10rem] bg-[#141413] ">
+                <Intro />
                 <About />
             </div>
         </div>

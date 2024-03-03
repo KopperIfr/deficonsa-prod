@@ -9,7 +9,7 @@ export default function Information() {
             <div className="mt-[2rem] w-full h-auto relative">
                 <div className="absolute top-0 left-0 z-[60]">
                     <h2 className="text-[1.5rem] text-[#bb9c47] font-semibold">TRABAJO INTELIGENTE</h2>
-                    <div className="text-[2.5rem] font-medium text-black/75">
+                    <div className="text-[2.5rem] font-semibold text-white">
                         <p>SOMOS PROFESIONALES,</p>
                         <p>DEDICADOS A TU OBJETIVO</p>
                         <p>BUSCANDO LA EXCELENCIA</p>
@@ -19,11 +19,13 @@ export default function Information() {
                     {
                         PROYECTS.map((elem, i) => (
                             i < 2 ? 
-                            <div className={cn("w-[21rem] h-[26rem] relative overflow-hidden flex flex-row justify-end", {'mt-[7rem]' : i === 1})} key={i}>
+                            <div className={cn("w-[21rem] h-[26rem] relative overflow-hidden", {'mt-[7rem]' : i === 1})} key={i}>
+                                <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-20"></div>
                                 <Image 
                                 src={elem.img}
                                 alt="img"
                                 fill
+                                priority={true}
                                 sizes="(max-width: 5px), (max-height: 5px)"
                                 className="max-w-[25rem] object-cover w-full h-full"
                                 />
